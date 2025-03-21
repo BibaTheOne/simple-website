@@ -1,0 +1,171 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #2c3e50; /* Modern dark gray */
+  background-color: #ecf0f1; /* Light gray for a clean background */
+}
+
+header {
+  background: #1abc9c; /* Teal for a modern look */
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  background: linear-gradient(90deg, #1abc9c, #16a085); /* Modern gradient */
+  padding: 10px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px; /* Spaced for a clean look */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+  padding: 8px 15px;
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+nav ul li a:hover {
+  background: white;
+  color: #16a085; /* Invert colors on hover */
+}
+
+footer {
+  background: #34495e; /* Darker gray-blue for contrast */
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 20px;
+}
+
+/* Images and videos */
+img,
+video {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Equal image sizes */
+main img {
+  width: 300px; /* Set a consistent width */
+  height: 200px; /* Set a consistent height */
+  object-fit: cover; /* Ensures images are cropped uniformly */
+  border-radius: 5px; /* Adds rounded corners */
+}
+
+/* Flexbox layout for images */
+section .img-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Adds spacing between the images */
+  flex-wrap: nowrap; /* Horizontal layout for large screens */
+}
+
+@media (max-width: 768px) {
+  section .img-container {
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    flex-direction: column; /* Stacks images vertically */
+    align-items: center; /* Centers images in vertical layout */
+  }
+}
+
+/* Layout and section styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1abc9c; /* Teal for headings */
+}
+
+/* Form styles */
+form {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #bdc3c7; /* Soft gray border */
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #bdc3c7; /* Matches the form border */
+  border-radius: 5px;
+}
+
+form button {
+  background: #1abc9c; /* Teal button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #16a085; /* Slightly darker teal on hover */
+}
+
+/* Gallery styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  border-radius: 5px;
+  border: 1px solid #bdc3c7; /* Adds subtle borders to images */
+}
+
+/* Address styles */
+address {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
